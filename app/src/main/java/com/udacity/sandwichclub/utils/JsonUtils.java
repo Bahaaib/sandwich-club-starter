@@ -16,6 +16,17 @@ public class JsonUtils {
     public static String name, placeOfOrigin, description, image;
     public static String[] ingredientsArray, alsoknownArray;
     public static Sandwich sandwich;
+    public static final String NAME_KEY = "name";
+    public static final String MAINNAME_KEY = "mainName";
+    public static final String ALSOKNOWNAS_KEY = "alsoKnownAs";
+    public static final String PLACEOFORIGIN_KEY = "placeOfOrigin";
+    public static final String DESCRIPTION_KEY = "description";
+    public static final String IMAGE_KEY = "image";
+    public static final String INGREDIENTS_KEY = "ingredients";
+
+
+
+
 
 
     public static Sandwich parseSandwichJson(String json) {
@@ -24,16 +35,16 @@ public class JsonUtils {
             sandwichObject = new JSONObject(json);
 
             //Retrieving Sandwich name..
-            JSONObject nameOBJ = sandwichObject.getJSONObject("name");
-            name = nameOBJ.getString("mainName");
+            JSONObject nameOBJ = sandwichObject.getJSONObject(NAME_KEY);
+            name = nameOBJ.optString(MAINNAME_KEY);
 
             //Retrieving Sandwich available known names..
-            alsoknownJSONArray = nameOBJ.getJSONArray("alsoKnownAs");
+            alsoknownJSONArray = nameOBJ.getJSONArray(ALSOKNOWNAS_KEY);
             if (alsoknownJSONArray.length() != 0) {
             alsoknownArray = new String[alsoknownJSONArray.length()];
 
                 for (int i = 0; i < alsoknownJSONArray.length(); i++) {
-                    alsoknownArray[i] = alsoknownJSONArray.getString(i);
+                    alsoknownArray[i] = alsoknownJSONArray.optString(i);
                 }
 
             }else {
@@ -41,22 +52,22 @@ public class JsonUtils {
             }
 
             //Retrieving Sandwich Place Of Origin..
-            placeOfOrigin = sandwichObject.getString("placeOfOrigin");
+            placeOfOrigin = sandwichObject.optString(PLACEOFORIGIN_KEY);
             if (placeOfOrigin.equals("")){
                 placeOfOrigin = "N/A";
             }
 
             //Retrieving Sandwich Description..
-            description = sandwichObject.getString("description");
+            description = sandwichObject.optString(DESCRIPTION_KEY);
 
             //Retrieving Sandwich Image..
-            image = sandwichObject.getString("image");
+            image = sandwichObject.optString(IMAGE_KEY);
 
             //Retrieving Sandwich Ingredients..
-            ingredientsJSONArray = sandwichObject.getJSONArray("ingredients");
+            ingredientsJSONArray = sandwichObject.getJSONArray(INGREDIENTS_KEY);
             ingredientsArray = new String[ingredientsJSONArray.length()];
             for (int i = 0; i < ingredientsJSONArray.length(); i++) {
-                ingredientsArray[i] = ingredientsJSONArray.getString(i);
+                ingredientsArray[i] = ingredientsJSONArray.optString(i);
 
 
             }

@@ -2,4 +2,17 @@
 <resources>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="origin_marginTop">230dp</dimen>
+    <dimen name="views_marginLeft">8dp</dimen>
+    <dimen name="alsoknown_marginTop">260dp</dimen>
+    <dimen name="ing_marginTop">320dp</dimen>
+    <dimen name="originTV_marginTop">210dp</dimen>
+    <dimen name="descTV_marginTop">430dp</dimen>
+    <dimen name="descTV_padding">4dp</dimen>
+    <dimen name="ingTV_marginTop">350dp</dimen>
+    <dimen name="alsoknownTV_marginTop">280dp</dimen>
+    <dimen name="desc_marginTop">410dp</dimen>
+    <dimen name="ingTV_maxWidth">330dp</dimen>
+    <dimen name="descTV_maxWidth">350dp</dimen>
+    <dimen name="img_height">200dp</dimen>
 </resources>
