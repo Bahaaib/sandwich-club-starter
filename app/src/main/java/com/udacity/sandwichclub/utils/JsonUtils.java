@@ -35,6 +35,7 @@ public class JsonUtils {
                 for (int i = 0; i < alsoknownJSONArray.length(); i++) {
                     alsoknownArray[i] = alsoknownJSONArray.getString(i);
                 }
+
             }else {
                 alsoknownArray = new String[]{"N/A"};
             }

@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="310dp"
+                android:layout_marginTop="320dp"
                 android:text="@string/detail_ingredients_label"
                 android:textStyle="bold" />
 
@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="420dp"
+                android:layout_marginTop="430dp"
                 android:maxWidth="350dp"
                 android:padding="4dp" />
 
@@ -73,8 +73,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="340dp"
-                android:maxWidth="350dp" />
+                android:layout_marginTop="350dp"
+                android:maxWidth="330dp" />
 
             <TextView
                 android:id="@+id/also_known_tv"
@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="400dp"
+                android:layout_marginTop="410dp"
                 android:text="@string/detail_description_label"
                 android:textStyle="bold" />
         </RelativeLayout>

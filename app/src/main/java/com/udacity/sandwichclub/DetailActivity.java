@@ -72,12 +72,12 @@ public class DetailActivity extends AppCompatActivity {
 
         placeOfOrigin.setText(sandwich.getPlaceOfOrigin());
 
-        //Append List into lisView
+        //Append List into TextView
         for (int i = 0; i < sandwich.getAlsoKnownAs().size(); i++) {
-            if (sandwich.getAlsoKnownAs().size() - i-1 > 1) {
-                alsoKnownAs.setText(sandwich.getAlsoKnownAs().get(i) + ", ");
+            if (sandwich.getAlsoKnownAs().size() - i > 1) {
+                alsoKnownAs.append(sandwich.getAlsoKnownAs().get(i) + ", ");
             } else {
-                alsoKnownAs.setText(sandwich.getAlsoKnownAs().get(i) + ".");
+                alsoKnownAs.append(sandwich.getAlsoKnownAs().get(i) + ".");
             }
         }
 
