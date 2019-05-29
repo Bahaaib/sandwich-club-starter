@@ -1,4 +1,4 @@
-package com.udacity.sandwichclub;
+package ets.udacity.sandwichclub;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +8,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
-import com.udacity.sandwichclub.model.Sandwich;
-import com.udacity.sandwichclub.utils.JsonUtils;
+
+import ets.udacity.sandwichclub.model.Sandwich;
+import ets.udacity.sandwichclub.utils.JsonUtils;
 
 public class DetailActivity extends AppCompatActivity {
 

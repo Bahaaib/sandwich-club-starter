@@ -1,12 +1,12 @@
-package com.udacity.sandwichclub.utils;
-
-import com.udacity.sandwichclub.model.Sandwich;
+package ets.udacity.sandwichclub.utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.Arrays;
+
+import ets.udacity.sandwichclub.model.Sandwich;
 
 
 public class JsonUtils {
